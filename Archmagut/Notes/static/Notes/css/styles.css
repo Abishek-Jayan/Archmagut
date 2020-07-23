@@ -1,4 +1,4 @@
-@font-face {
+ed@font-face {
     font-family: OpenSans;
     src: url(../fonts/OpenSans-Light.ttf);
 }
@@ -73,9 +73,9 @@ body {
 }
 
 .note {
+    position: relative;
     width: 200px;
     height: fill;
-    background: linear-gradient(to bottom right, rgba(40, 40, 92, 0.705), rgba(87, 87, 240, 0.705));
     margin: 30px;
     border-radius: 15px;
     animation: shake 0.2s;
@@ -109,6 +109,24 @@ body {
     border: none;
     overflow: hidden;
     outline: none;
+    
+}
+span {
+    display:none;
+    position: absolute;
+    max-width: 100px;
+    min-height: 100px;
+    z-index: 1;
+}
+.butty:hover span {
+    display: block;
+}
+
+span .fucko{
+    border: none;
+    min-width: 40px;
+    min-height: 30px;
+    
 }
 
 #butty:active img {
@@ -131,7 +149,8 @@ body {
 
 .ex {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .butty img {

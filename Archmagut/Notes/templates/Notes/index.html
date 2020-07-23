@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'Notes/css/styles.css' %}">
+
+    <title>Archmagut: The Notemaking WebApp</title>
+</head>
+
+<body>
+    {% csrf_token %}
+    <h1 id="titley">Archmagut: The Notemaking WebApp</h1>
+    <div class="notegrid">
+        {% for note in noter %}
+        <div class="note" id={{note.id}} ">
+            <div class="note_container">
+                <h3>{{note.Title}}</h3>
+                <hr>
+                <p>{{note.Body}}</p>
+            </div>
+            
+            <div class="ex">
+                <button class="butty butt rearr" id="1">
+                    <img src="/static/Notes/images/drag.png">
+                </button>
+                <button class="butty butt" type="button">
+                    <img src="/static/Notes/images/minus.png">
+                </button>
+            </div>
+        </div>
+        {% endfor %}
+            <div class="plus">
+                <button id="butty" class="butty" type="button"><img src="{% static 'Notes/images/plus2.png' %}"></button>
+            </div>
+        </div>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'Notes/js/script.js' %}"></script>
+</body>
+
+</html>
