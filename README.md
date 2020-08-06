@@ -1,4 +1,4 @@
-# Archmagut WebApp
+# Archmagut
 ---
 A web app similar to Google Keep I made using HTML, CSS, JavaScript and Django.
 
