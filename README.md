@@ -7,7 +7,7 @@ A notemaking webapp made using Javascript and Django backend
 * Title Bar for notes
 * **DARK THEME**
 * Click on note to edit
-* Delete button deletes notes (delete should ask for confirmation)
+* Delete button deletes notes 
 
 ## Update (July 23, 2020) Version 2: Updated Features
 * Ability to change the colour of a note at **will**
