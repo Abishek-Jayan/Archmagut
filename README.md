@@ -1,6 +1,6 @@
 # Archmagut
 ---
-A web app similar to Google Keep I made using HTML, CSS, JavaScript and Django.
+A notemaking webapp made using Javascript and Django backend 
 
 ## Version 1: Features
 * Clicking on the *plus* Button adds **note**
